@@ -22,6 +22,7 @@ body::-webkit-scrollbar-thumb {
     color: #F7F9F2;
     font-family: "Exo 2", sans-serif;
     cursor: none;
+    scroll-behavior: smooth;
 }
 
 #cursor-follower {
@@ -87,9 +88,9 @@ section#header {
 
 #navbar #navLinks > ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
-    width: 100%;
+    width: 300px;
     padding: 0;
     margin: 0;
     align-items: center;
@@ -107,6 +108,7 @@ section#header {
     display: block;
     list-style: none;
     height: 0;
+    white-space: nowrap;
     overflow: hidden;
     background-color: #2C3333;
     border-radius: 5px;

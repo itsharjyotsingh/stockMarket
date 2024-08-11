@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     const navbarAnimation = () => {
         const navbar = document.querySelector("#navbar");
-        const navLinks = document.querySelectorAll("#navbar a");
+        const navLinks = document.querySelectorAll("#navLinks > ul > li");
         const getInTouch = document.querySelector("#getInTouch");
 
         const tl = gsap.timeline({});
@@ -90,6 +90,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
             y: -50,
             opacity: 0,
             duration: 0.8,
+            delay: -1,
             stagger: 0.2,
         });
 
