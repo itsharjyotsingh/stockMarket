@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +11,102 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <div id="cursor-follower"></div>
+
     <section id="header">
         <div id="navbar">
-            <div id="name">
+            <div id="name" class="cursor-pointer">
                 Kunj's Stock Market School
             </div>
             <div id="navLinks">
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <div class="cursor-pointer">About us</div>
+                    </li>
+                    <li>
+                        <div>Courses
+                            <ul id="col-list">
+                                <li class="cursor-pointer">Basic/Advanced Stock Market Learning</li>
+                                <hr>
+                                <li class="cursor-pointer">Basic/Advanced Future & options</li>
+                                <hr>
+                                <li class="cursor-pointer">Basic/Advanced Fundamentals learning</li>
+                                <hr>
+                                <li class="cursor-pointer">Basic/Advanced Technicals & Price Action learning</li>
+                                <hr>
+                                <li class="cursor-pointer">Basic/Advanced Investment course</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cursor-pointer">Contact</div>
+                    </li>
                 </ul>
             </div>
-            <button id="getInTouch">Get in touch</button>
+            <button id="getInTouch" class="cursor-pointer">Get in touch</button>
         </div>
 
         <div id="motto">
-             <div>GROWTH & WEALTH</div>
-             <div>THROUGH EDUCATION</div>
+            <div>GROWTH & WEALTH</div>
+            <div>THROUGH EDUCATION</div>
         </div>
     </section>
 
-    <section id="section-2">
+    <section id="about-us-section">
+        <h2 id="header">Who are we?</h2>
+        <div id="outer-div">
+            <div id="inner-div">
+                <h3>Welcome to our financial consultancy, led by CA Mohit Goyal, a Chartered Accountant with over 10 years
+                    of experience in taxation and GST. Under his leadership, our team is dedicated to providing a full range
+                    of financial services designed to help you achieve your financial goals.</h3>
+    
+                <h3>Our team brings together a wealth of experience in tax planning, stock market investing, mutual fund
+                    distribution, and
+                    accounting. With deep expertise in technical analysis, Futures and Options trading, and risk management,
+                    we
+                    offer
+                    strategic guidance that balances potential returns with careful risk assessment.
+                </h3>
+    
+                <h3>In addition to our tax and investment services, we specialize in mutual funds distribution, supported by
+                    strong
+                    qualifications and industry certifications. We are committed to delivering personalized investment
+                    strategies and
+                    ensuring that your financial foundation is secure through comprehensive accounting support.
+                </h3>
+            </div>
+            <div id="line"></div>
+            <div id="second-div">
+                <div id="member-name">
+                    AS A TEAM
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="section-last">
+        <div id="outer-div">
+            <div id="inner-div">
+                <div id="heading">CA Mohit Goyal</div>
+                <span>SCO-58 second floor</span>
+                <span>Mohali City Centre</span>
+                <span>Aerocity F block</span>
+                <span>Airport road Mohali - 160062</span>
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3432.9270016873766!2d76.75676857513359!3d30.636014790301267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feec715555555%3A0xa5d59ce70feb3eca!2sCA.%20in%20Mohali%2C%20Mohit%20Goyal!5e0!3m2!1sen!2sin!4v1723390351928!5m2!1sen!2sin"
+                    width="90%" height="200" style="border:0;" allowfullscreen="" loading="lazy" darkmode="true"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div id="contact-us">
+                <h1>Mail us: <a href="mailto:camohitgoyal89@gmail.com"
+                        class="cursor-pointer">camohitgoyal89@gmail.com</a></h1>
+                <h1>Call us: <a href="tel:+917814717811" class="cursor-pointer">+91 7814717811</a></h1>
+            </div>
+        </div>
     </section>
 
 
@@ -44,4 +117,5 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
