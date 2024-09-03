@@ -37,6 +37,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 1000;
 }
 
+
 section#header {
     background-color: #191919;
     height: 100vh;
@@ -86,7 +87,7 @@ section#header {
     height: 100%;
 }
 
-#navbar #navLinks > ul {
+#navbar #navLinks>ul {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
@@ -96,7 +97,7 @@ section#header {
     align-items: center;
 }
 
-#navbar #navLinks > ul > li {
+#navbar #navLinks>ul>li {
     font-family: "Exo 2", sans-serif;
     font-weight: 400;
     font-size: medium;
@@ -142,22 +143,20 @@ section#header {
     font-size: 6rem;
 }
 
-#about-us-section {
-    height: 100vh;
-    padding: 80px;
+.about-us-section {
+    padding:80px;
     background-color: #191919;
     width: 100%;
 }
 
-#about-us-section #outer-div {
+.about-us-section #outer-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
     width: 100%;
 }
 
-#about-us-section h2#header {
+.about-us-section h2#header {
     font-size: 48px;
     margin: 0;
     padding: 0;
@@ -175,10 +174,13 @@ section#header {
 
 #outer-div {
     width: 60%;
-    height: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#section-last #outer-div {
+    flex-direction: row-reverse;
 }
 
 #section-last #inner-div {
@@ -187,7 +189,7 @@ section#header {
     line-height: 1.2;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: flex-end;
     font-family: "Exo 2", sans-serif;
     flex-direction: column;
     font-weight: 200;
@@ -210,12 +212,12 @@ section#header {
     font-family: "Exo 2", sans-serif;
     font-weight: 100;
     padding-left: 30px;
-    border-left: 2px solid white;
+    border-right: 2px solid white;
     height: 90%;
     width: 60%;
 }
 
-#about-us-section #inner-div {
+.about-us-section #inner-div {
     width: 60%;
     padding-right: 50px;
 }
@@ -224,12 +226,12 @@ section#header {
     font-weight: 200;
 }
 
-#about-us-section #line {
+.about-us-section #line {
     height: 90%;
     border-left: 2px solid white;
 }
 
-#about-us-section #second-div {
+.about-us-section #second-div {
     width: 40%;
     height: 100%;
     display: flex;
@@ -240,4 +242,60 @@ section#header {
 #second-div #member-name {
     font-size: 5rem;
     font-weight: 600;
+}
+
+.course {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.course div > h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.course div p {
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+.course div {
+    width: 35vw;
+}
+
+#courses {
+    background-color: #191919;
+    margin: 0px;
+}
+
+#courses .inner-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 80px;
+}
+
+.spread-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.spread-container li {
+    list-style-type: square;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 600px) {
+    #cursor-follower {
+        display: none;
+    }
+
+    #navbar #navLinks {
+        display: none;
+    }
+    
 }
